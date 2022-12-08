@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OOP</title>
+     <!-- font Awesome cdn -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"">
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 my-5">
+          <div class="card shadow">
+            <div class="card-body">
+              <h3>Add Student</h3>
+              <div class="msg"></div>
+              <form id="basic_form">
+                <div class="my-3">
+                  <input
+                    name="name"
+                    class="form-control"
+                    placeholder="Name"
+                    type="text"
+                  />
+                </div>
+                <div class="my-3">
+                  <input
+                    name="email"
+                    class="form-control"
+                    placeholder="Email"
+                    type="text"
+                  />
+                </div>
+                <div class="my-3">
+                  <input
+                    name="skill"
+                    class="form-control"
+                    placeholder="Skill"
+                    type="text"
+                  />
+                </div>
+                <div class="my-3">
+                    <input
+                      name="phone"
+                      class="form-control"
+                      placeholder="Phone"
+                      type="number"
+                    />
+                  </div>
+
+                <div class="my-3">
+                  <input
+                    name="photo"
+                    class="form-control"
+                    placeholder="Photo"
+                    type="text"
+                  />
+                </div>
+                <div class="my-3">
+                  <input type="submit" class="baton w-100" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-9 my-5 ">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr class="d">
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Skill</th>
+                                <th>Phone</th>
+                                <th>Photo</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody class="d-felx align-items-center" id="student_table">
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+     <!-- view data -->
+     <div class="modal fade" id="view_modal">
+      <div class="modal-dialog modal-dialog-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>View Student</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <div class="card-body view_data">
+              
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+     </div>
+
+
+
+
+     <!-- Edit modal -->
+     <div class="modal fade" id="edit_modal">
+      <div class="modal-dialog modal-dialog-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3>Edit Student Data</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="card">
+              <div class="card-body edit_data">
+
+                <div class="msg"></div>
+                    <form id="edit_form" method="post" >
+                      
+                    </form>
+              
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer"></div>
+        </div>
+      </div>
+     </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="/App.js"></script>
+  </body>
+</html>
